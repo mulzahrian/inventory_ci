@@ -1,0 +1,12 @@
+
+.content {
+  max-width: 21cm;
+  margin: auto;
+}
+.center {
+  text-align: center;
+}
+p{
+  margin:0px;
+  padding:0px;
+}
