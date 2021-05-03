@@ -8,10 +8,10 @@ Instalation
 *******************
 follow the instructions below:
 
-> Download the source code
-> Instal xampp
-> Put the source code on htdocs file
-> Run program on your browser
-> Use this link localhost/inventory_ci
+> - Download the source code
+> - Instal xampp
+> - Put the source code on htdocs file
+> - Run program on your browser
+> - Use this link localhost/inventory_ci
 
 
