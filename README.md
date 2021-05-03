@@ -6,9 +6,12 @@ This systemation is a system for recording incoming and outgoing goods from a co
 *******************
 Instalation
 *******************
+follow the instructions below:
 
--download the source code
--instal xampp
--put the source code on htdocs file
--run program on your browser
--use this link localhost/inventory_ci
+> Download the source code
+> Instal xampp
+> Put the source code on htdocs file
+> Run program on your browser
+> Use this link localhost/inventory_ci
+
+
