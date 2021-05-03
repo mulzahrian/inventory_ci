@@ -8,6 +8,10 @@ Instalation
 *******************
 follow the instructions below:
 
+```
+git clone https://github.com/mulzahrian/inventory_ci.git
+```
+
 > - Download the source code
 > - Instal xampp
 > - Put the source code on htdocs file
