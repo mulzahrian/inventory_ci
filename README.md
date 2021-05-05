@@ -12,7 +12,7 @@ follow the instructions below:
 git clone https://github.com/mulzahrian/inventory_ci.git
 ```
 
-> - Download the source code
+> - Download the source code or clone on gitbash
 > - Instal xampp
 > - Put the source code on htdocs file
 > - Run program on your browser
