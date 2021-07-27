@@ -23,6 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+
+//when u upload this one on hosting change THE URL
 $config['base_url'] = 'http://localhost/inventory_ci/';
 
 /*
