@@ -5,7 +5,6 @@ This systemation is a system for recording incoming and outgoing goods from a co
 
 *******************
 Instalation
-*******************
 follow the instructions below:
 
 ```
