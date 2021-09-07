@@ -58,10 +58,6 @@ class Stock extends CI_Controller
        redirect(base_url() . 'Stock', 'refresh');
     }
 
-
-   
-   //tes
-
     public function tampil_stock()
     {
         $id_stok = $this->input->post('id_stok');
@@ -90,11 +86,5 @@ class Stock extends CI_Controller
             echo json_encode($data);
             exit;
         }
-    }
-
-
-
-    //end
-    
-    
+    }    
 }
