@@ -50,10 +50,6 @@ class Kategori extends CI_Controller
        redirect(base_url() . 'Kategori', 'refresh');
     }
 
-
-   
-   //tes
-
     public function tampil_list_kategori()
     {
         $id_kategori = $this->input->post('id_kategori');
@@ -80,11 +76,5 @@ class Kategori extends CI_Controller
             echo json_encode($data);
             exit;
         }
-    }
-
-
-
-    //end
-    
-    
+    }    
 }
