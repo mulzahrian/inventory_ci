@@ -19,8 +19,6 @@ class Laporan extends CI_Controller
 
         $this->load->view('assets/_header');
         $page_data['produk'] = $this->M_produk->getProduk();
-        
-
         $page_data['page_content'] = 'page_content/Laporan_v';
         
         $this->load->view('Main', $page_data);
@@ -30,25 +28,11 @@ class Laporan extends CI_Controller
     public function pdf($id_produk)
     {
         $this->load->library('dompdf_gen');
-
-        //$data['title'] = 'Detail Data Rekam Medis';
-
+        
         $this->load->model('M_produk');
         $detail = $this->M_produk->Detail_Product($id_produk);
         $data['detail'] = $detail;
         $where = array('id_produk' => $id_produk);
-        
-        
-        
-
-         //$data = array(
-        //'record'  => $this->db->query("SELECT * FROM db_rekam_medis where id ='$id'"),
-        //);
-
-
-        //$data['db_rekam_medis'] = $this->Laporan_model->getLaporanById($id);
-        //$data['id_hewan_ternak'] = $this->db->get('db_rekam_medis')->result_array();
-        //$this->load->view('laporan/pdf',$data);
         $this->load->view('page_content/Pdf_v', $data);
 
         $paper_size = 'A5';
@@ -67,14 +51,11 @@ class Laporan extends CI_Controller
 
 public function excel()
     {
-        //$data['medis'] = $this->Laporan_model->getAllLaporan();
+
 
         $data['pro'] = $this->M_produk->tampil_pro('tbl_produk')->result();
-
-        //$data['medis'] = $this->db->get('db_rekam_medis')->result_array();
         require(APPPATH. 'PHPExcel-1.8/Classes/PHPExcel.php');
         require(APPPATH. 'PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007.php');
-
 
         $object = new PHPExcel();
 
@@ -110,11 +91,6 @@ public function excel()
     $writer=PHPExcel_IOFactory::createwriter($object, 'Excel2007');
     $writer->save('php://output');
     exit;
-
 }
-
-    
-
-    
-    
+ 
 }
