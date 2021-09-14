@@ -6,13 +6,10 @@
 
         <div class="clearfix"></div>
     </div>
-    <!--button-->
 
     <div align="right">
         <button class="btn btn-primary btn-anim mr-50" style="margin-right: 40px;" data-toggle="modal" data-target=".modal-pendaftaranakun"><i class="icon-plus"></i><span class="btn-text">TAMBAH KATEGORI</span></button>
     </div>
-
-    <!--button-->
 
    <div class="row mt-30">
             <div class="col-md-12">
@@ -25,17 +22,7 @@
             </div>
         </div>
 
-
-
-
-
-        
-
-
-
 <div class="table-wrap">
-                <!-- <p id="notif_load" style="color:red;">Loading data, Please wait</p> -->
-
                 <div class="table-responsive">
                     <table class="table table-hover display  pb-30" id="datable">
                         <thead>
@@ -61,13 +48,6 @@
         
     </div>
 
-
-
-<!-- Datatables -->
-
-
-<!--modal yang akan dipakai-->
-
 <div class="panel-wrapper collapse in">
     <div class="panel-body">
         <!-- sample modal content -->
@@ -81,16 +61,9 @@
 
                     </div>
                     <div class="modal-body">
-
-                        <!--  -->
-                        <!-- Form body  -->
                         <?php echo form_open('Kategori/insertKategori', array('class' => 'form-horizontal')) ?>
 
                         <div class="form-body mt-20">
-
-                            
-
-                                <!-- span -->
 <div class="col-md-6">
     <div class="form-group">
         <label class="control-label col-md-3">KATEGORI</label>
@@ -100,27 +73,12 @@
         </div>
     </div>
 
-
-                                
-
-
      <p class="mt-15">
-        <!-- /Row -->
-
         <div class="row">
-            
-
-
-                                    
-
-
     <p class="mt-15">
-</div>
-
-
-<!-- /Row -->
     </div>
-<!-- End -->
+    </div>
+                    
     </div>
 <div class="modal-footer mb-10 mr-15">
 
@@ -128,17 +86,11 @@
 
                     </div>
                 </div>
-                <!-- /.modal-content -->
             </div>
-            <!-- /.modal-dialog -->
         </div>
-        <!--akhir modal yang akan dipakai-->
-<!--modal yang akan dipakai-->
 
 <div class="panel-wrapper collapse in">
     <div class="panel-body">
-        <!-- sample modal content -->
-
         <div class="modal fade modal-modalEditKategori" id="modalEditKategori" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -148,16 +100,7 @@
 
                     </div>
                     <div class="modal-body">
-
-                        <!--  -->
-                        <!-- Form body  -->
-                       
-
                         <div class="form-body mt-20">
-
-                            
-
-                          <!-- span -->
 <div class="col-md-6">
     <div class="form-group">
         <label class="control-label col-md-3">KATEGORI</label>
@@ -172,7 +115,6 @@
 
 
      <p class="mt-15">
-        <!-- /Row -->
 
         <div class="row">
             
@@ -185,9 +127,7 @@
 </div>
 
 
-<!-- /Row -->
     </div>
-<!-- End -->
     </div>
 <div class="modal-footer mb-10 mr-15">
 
@@ -195,28 +135,8 @@
 
                     </div>
                 </div>
-                <!-- /.modal-content -->
             </div>
-            <!-- /.modal-dialog -->
         </div>
-        <!--akhir modal yang akan dipakai-->
-
-
-
-<!-- Datatables -->
-
-
-
-
-        <!--end modal 2-->
-
-
-
-
-
-<!--  -->
-
-<!--tampil data-->
 
 <script type="text/javascript">
      $(document).ready(function () {
@@ -254,12 +174,7 @@
                 });
             });
 
-     //tampil hari ini 
-
      function edit_kategori(id_kategori) {
-                // alert(no_dokumen);
-                //$("#no_dok").val(no_dokumen);
-                // $("#no_dokumen1").val(no_dokumen);
                 $("#modalEditKategori").modal('show');
             }
 
