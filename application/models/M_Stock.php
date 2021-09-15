@@ -17,11 +17,5 @@ class M_Stock extends CI_Model
         $this->db->where('f.id_produk=l.id_produk');
         return $this->db->get()->result();
     }
-
-//     SELECT pelanggan.id_pelanggan, pelanggan.nm_pelanggan, pesan.id_pesan, pesan.tgl_pesan
-// FROM pelanggan, pesan
-// WHERE pelanggan.id_pelanggan=pesan.id_pelanggan;
-
-    
     
 }
