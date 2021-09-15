@@ -6,36 +6,16 @@
 
         <div class="clearfix"></div>
     </div>
-    <!--button-->
-
     <div align="right">
         <a href="<?= base_url(); ?>Laporan/excel" class="btn btn-success btn-anim mr-50">  Excel File</a>
     </div>
-
-    <!--button-->
-
    <div class="row mt-30">
             <div class="col-md-12">
-                <div class="col-md-3 mt-20">
-                   
+                <div class="col-md-3 mt-20"> 
             </div>
-                
-                
-                
             </div>
         </div>
-
-
-
-
-
-        
-
-
-
 <div class="table-wrap">
-                <!-- <p id="notif_load" style="color:red;">Loading data, Please wait</p> -->
-
                 <div class="table-responsive">
                     <table class="table table-hover display  pb-30" id="datable">
                         <thead>
@@ -53,7 +33,6 @@
                         $no = 1;
                         foreach($produk as $list){
                             ?>
-
                             <tr>
                                 <td><?php echo $no++; ?></td>
                                 <td><?php echo $list->nama_produk; ?></td>
@@ -64,46 +43,22 @@
                         class="btn btn-success btn-icon-anim btn-circle">PDF</i></a>
                                 </td>
                             </tr> 
-
-                            <!--modal edit  -->
-
                         <?php } ?>
-    
- 
-
                         <tbody style="color: black">
-        
                     </table>
-                
             </div>
-        
     </div>
-
-
-
-<!-- Datatables -->
-
-
-<!--modal yang akan dipakai-->
-
 <div class="panel-wrapper collapse in">
     <div class="panel-body">
-        <!-- sample modal content -->
-
         <div class="modal fade modal-pendaftaranakun" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <p>PRODUK</p>
                         <p>INPUT PRODUK</p>
-
                     </div>
                     <div class="modal-body">
-
-                        <!--  -->
-                        <!-- Form body  -->
                         <?php echo form_open('Produk/insertProduk', array('class' => 'form-horizontal')) ?>
-
                         <div class="form-body mt-20">
 
 <div class="col-md-6">
@@ -134,10 +89,7 @@
              </div>
         </div>
     </div>
-
-                            
-
-                                <!-- span -->
+                        
 <div class="col-md-6">
     <div class="form-group">
         <label class="control-label col-md-3">Kode Produk</label>
@@ -155,28 +107,11 @@
              </div>
         </div>
     </div>
-
-
-                                
-
-
      <p class="mt-15">
-        <!-- /Row -->
-
-        <div class="row">
-            
-
-
-                                    
-
-
+        <div class="row">      
     <p class="mt-15">
 </div>
-
-
-<!-- /Row -->
     </div>
-<!-- End -->
     </div>
 <div class="modal-footer mb-10 mr-15">
 
@@ -184,15 +119,5 @@
 
                     </div>
                 </div>
-                <!-- /.modal-content -->
             </div>
-            <!-- /.modal-dialog -->
         </div>
-        <!--akhir modal yang akan dipakai-->
-
-
-
-
-
-
-
