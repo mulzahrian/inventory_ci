@@ -40,12 +40,5 @@ class M_produk extends CI_Model
         $this->db->from('tbl_produk f,tbl_kategori l');
         $this->db->where('f.id_kategori=l.id_kategori');
         return $this->db->get()->result();
-    }
-
-//     SELECT pelanggan.id_pelanggan, pelanggan.nm_pelanggan, pesan.id_pesan, pesan.tgl_pesan
-// FROM pelanggan, pesan
-// WHERE pelanggan.id_pelanggan=pesan.id_pelanggan;
-
-    
-    
+    }  
 }
