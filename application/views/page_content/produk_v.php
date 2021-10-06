@@ -6,13 +6,10 @@
 
         <div class="clearfix"></div>
     </div>
-    <!--button-->
-
+    
     <div align="right">
         <button class="btn btn-primary btn-anim mr-50" style="margin-right: 40px;" data-toggle="modal" data-target=".modal-pendaftaranakun"><i class="icon-plus"></i><span class="btn-text">TAMBAH PRODUK</span></button>
     </div>
-
-    <!--button-->
 
    <div class="row mt-30">
             <div class="col-md-12">
@@ -34,8 +31,6 @@
 
 
 <div class="table-wrap">
-                <!-- <p id="notif_load" style="color:red;">Loading data, Please wait</p> -->
-
                 <div class="table-responsive">
                     <table class="table table-hover display  pb-30" id="datable">
                         <thead>
@@ -70,15 +65,8 @@
     </div>
 
 
-
-<!-- Datatables -->
-
-
-<!--modal yang akan dipakai-->
-
 <div class="panel-wrapper collapse in">
     <div class="panel-body">
-        <!-- sample modal content -->
 
         <div class="modal fade modal-pendaftaranakun" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-lg">
@@ -90,8 +78,6 @@
                     </div>
                     <div class="modal-body">
 
-                        <!--  -->
-                        <!-- Form body  -->
                         <?php echo form_open('Produk/insertProduk', array('class' => 'form-horizontal')) ?>
 
                         <div class="form-body mt-20">
@@ -126,8 +112,6 @@
     </div>
 
                             
-
-                                <!-- span -->
 <div class="col-md-6">
     <div class="form-group">
         <label class="control-label col-md-3">Kode Produk</label>
@@ -153,7 +137,6 @@
 
 
      <p class="mt-15">
-        <!-- /Row -->
 
         <div class="row">
             
@@ -165,10 +148,8 @@
     <p class="mt-15">
 </div>
 
-
-<!-- /Row -->
     </div>
-<!-- End -->
+
     </div>
 <div class="modal-footer mb-10 mr-15">
 
@@ -176,19 +157,13 @@
 
                     </div>
                 </div>
-                <!-- /.modal-content -->
+    
             </div>
-            <!-- /.modal-dialog -->
+    
         </div>
-        <!--akhir modal yang akan dipakai-->
-
-
-
-<!--modal yang akan dipakai-->
 
 <div class="panel-wrapper collapse in">
     <div class="panel-body">
-        <!-- sample modal content -->
 
         <div class="modal fade modal-modalEditProduk" id="modalEditProduk" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-lg">
@@ -200,8 +175,7 @@
                     </div>
                     <div class="modal-body">
 
-                        <!--  -->
-                        <!-- Form body  -->
+
                         <?php echo form_open('Produk/EditProduk', array('class' => 'form-horizontal')) ?>
 
                         <div class="form-body mt-20">
@@ -229,8 +203,6 @@
     </div>
 
                             
-
-                                <!-- span -->
 <div class="col-md-6">
     <div class="form-group">
         <label class="control-label col-md-3">Kode Produk</label>
@@ -255,7 +227,6 @@
 
 
      <p class="mt-15">
-        <!-- /Row -->
 
         <div class="row">
             
@@ -267,10 +238,8 @@
     <p class="mt-15">
 </div>
 
-
-<!-- /Row -->
     </div>
-<!-- End -->
+            
     </div>
 <div class="modal-footer mb-10 mr-15">
 
@@ -278,12 +247,10 @@
 
                     </div>
                 </div>
-                <!-- /.modal-content -->
+  
             </div>
-            <!-- /.modal-dialog -->
+ 
         </div>
-        <!--akhir modal yang akan dipakai-->
-
 
 <script type="text/javascript">
      $(document).ready(function () {
@@ -321,12 +288,9 @@
                 });
             });
 
-     //tampil hari ini
 
       function edit_produk(id_produk) {
-                // alert(no_dokumen);
-                //$("#no_dok").val(no_dokumen);
-                // $("#no_dokumen1").val(no_dokumen);
+
                 $("#modalEditProduk").modal('show');
             } 
 
