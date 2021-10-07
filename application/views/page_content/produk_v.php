@@ -22,14 +22,6 @@
             </div>
         </div>
 
-
-
-
-
-        
-
-
-
 <div class="table-wrap">
                 <div class="table-responsive">
                     <table class="table table-hover display  pb-30" id="datable">
@@ -63,7 +55,6 @@
             </div>
         
     </div>
-
 
 <div class="panel-wrapper collapse in">
     <div class="panel-body">
@@ -110,8 +101,7 @@
              </div>
         </div>
     </div>
-
-                            
+                      
 <div class="col-md-6">
     <div class="form-group">
         <label class="control-label col-md-3">Kode Produk</label>
@@ -131,28 +121,17 @@
              </div>
         </div>
     </div>
-
-
                                 
-
-
      <p class="mt-15">
 
         <div class="row">
-            
-
-
-                                    
-
 
     <p class="mt-15">
 </div>
-
     </div>
 
     </div>
 <div class="modal-footer mb-10 mr-15">
-
     <button  class="btn btn-success btn-anim  btn-sm" type="Submit"><i class="icon-rocket"></i><span class="btn-text">Submit</span></button>
 
                     </div>
@@ -161,7 +140,6 @@
             </div>
     
         </div>
-
 <div class="panel-wrapper collapse in">
     <div class="panel-body">
 
@@ -171,15 +149,11 @@
                     <div class="modal-header">
                         <p>PRODUK</p>
                         <p>INPUT PRODUK</p>
-
                     </div>
                     <div class="modal-body">
-
-
                         <?php echo form_open('Produk/EditProduk', array('class' => 'form-horizontal')) ?>
 
                         <div class="form-body mt-20">
-
 <div class="col-md-6">
     <div class="form-group">
         <label class="control-label col-md-3">Nama Kategori</label>
@@ -221,35 +195,21 @@
              </div>
         </div>
     </div>
-
-
-                                
-
-
      <p class="mt-15">
 
         <div class="row">
             
-
-
-                                    
-
-
     <p class="mt-15">
 </div>
-
     </div>
             
     </div>
 <div class="modal-footer mb-10 mr-15">
 
     <button  class="btn btn-success btn-anim  btn-sm" type="Submit"><i class="icon-rocket"></i><span class="btn-text">Submit</span></button>
-
                     </div>
                 </div>
-  
             </div>
- 
         </div>
 
 <script type="text/javascript">
@@ -293,12 +253,7 @@
 
                 $("#modalEditProduk").modal('show');
             } 
-
-   
-
 </script>
-
-
 <script type="text/javascript">
 
         function myFunction() {
@@ -317,8 +272,3 @@
                 }
         }
     </script>
-
-
-
-
-
