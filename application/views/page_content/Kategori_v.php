@@ -15,10 +15,7 @@
             <div class="col-md-12">
                 <div class="col-md-3 mt-20">
                    
-            </div>
-                
-                
-                
+            </div> 
             </div>
         </div>
 
@@ -43,11 +40,8 @@
                         <tbody style="color: black">
                         </tbody>
                     </table>
-                
             </div>
-        
     </div>
-
 <div class="panel-wrapper collapse in">
     <div class="panel-body">
         <!-- sample modal content -->
@@ -110,22 +104,11 @@
         </div>
     </div>
 
-
-                                
-
-
      <p class="mt-15">
 
         <div class="row">
-            
-
-
-                                    
-
-
     <p class="mt-15">
 </div>
-
 
     </div>
     </div>
@@ -140,8 +123,6 @@
 
 <script type="text/javascript">
      $(document).ready(function () {
-
-
                 $('#datable').DataTable({
                         "language": {
                         "sEmptyTable":   "Tidak ada data yang tersedia pada tabel ini",
@@ -173,12 +154,7 @@
                         ],
                 });
             });
-
      function edit_kategori(id_kategori) {
                 $("#modalEditKategori").modal('show');
             }
-
-   
-
 </script>
-
