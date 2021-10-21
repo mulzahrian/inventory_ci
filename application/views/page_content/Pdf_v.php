@@ -4,7 +4,6 @@
 	<title>PDF</title>
 </head>
 <body>
-
 	
       <p>Nama Product</p>
       <p><?php echo  $detail->nama_produk ?></p>
