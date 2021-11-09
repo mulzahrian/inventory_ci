@@ -6,36 +6,16 @@
 
         <div class="clearfix"></div>
     </div>
-    <!--button-->
-
     <div align="right">
         <button class="btn btn-primary btn-anim mr-50" style="margin-right: 40px;" data-toggle="modal" data-target=".modal-pendaftaranakun"><i class="icon-plus"></i><span class="btn-text">TAMBAH STOCK</span></button>
     </div>
-
-    <!--button-->
-
    <div class="row mt-30">
             <div class="col-md-12">
                 <div class="col-md-3 mt-20">
-                   
             </div>
-                
-                
-                
             </div>
         </div>
-
-
-
-
-
-        
-
-
-
 <div class="table-wrap">
-                <!-- <p id="notif_load" style="color:red;">Loading data, Please wait</p> -->
-
                 <div class="table-responsive">
                     <table class="table table-hover display  pb-30" id="datable">
                         <thead>
@@ -54,40 +34,22 @@
                                 <th>TANGGAL UPDATE</th>
                             </tr>
                         </tfoot>
-
                         <tbody style="color: black">
                         </tbody>
                     </table>
-                
             </div>
-        
     </div>
-
-
-
-<!-- Datatables -->
-
-
-<!--modal yang akan dipakai-->
-
 <div class="panel-wrapper collapse in">
     <div class="panel-body">
-        <!-- sample modal content -->
-
         <div class="modal fade modal-pendaftaranakun" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <p>STOCK</p>
                         <p>INPUT STOCK</p>
-
                     </div>
                     <div class="modal-body">
-
-                        <!--  -->
-                        <!-- Form body  -->
                         <?php echo form_open('Stock/insertStock', array('class' => 'form-horizontal')) ?>
-
                         <div class="form-body mt-20">
 
 <div class="col-md-6">
@@ -95,7 +57,6 @@
         <label class="control-label col-md-3">Nama Produk</label>
             <div class="col-md-9 has-success">
                 <select class="form-control filled-input select2" style="border: 1px solid lightgreen;" tabindex="1" name="id_produk" id="id_produk">
-
                     <option value="-">Pilih Produk</option>
                         <?php
                             foreach ($stock as $row) :
@@ -103,14 +64,11 @@
                     <option
                         value="<?php echo $row['id_produk'] . "|" . $row['nama_produk']; ?>">
                     <?php echo $row['nama_produk']; ?></option>
-
                         <?php endforeach; ?>    
             </select>
              </div>
         </div>
     </div>
-
-                                <!-- span -->
 <div class="col-md-6">
     <div class="form-group">
         <label class="control-label col-md-3">Jumlah Barang</label>
@@ -119,7 +77,6 @@
              </div>
         </div>
     </div>
-
     <div class="col-md-6">
     <div class="form-group">
         <label class="control-label col-md-3">Tanggal Update</label>
@@ -128,28 +85,11 @@
              </div>
         </div>
     </div>
-
-
-                                
-
-
      <p class="mt-15">
-        <!-- /Row -->
-
         <div class="row">
-            
-
-
-                                    
-
-
     <p class="mt-15">
 </div>
-
-
-<!-- /Row -->
     </div>
-<!-- End -->
     </div>
 <div class="modal-footer mb-10 mr-15">
 
@@ -157,16 +97,10 @@
 
                     </div>
                 </div>
-                <!-- /.modal-content -->
             </div>
-            <!-- /.modal-dialog -->
         </div>
-        <!--akhir modal yang akan dipakai-->
-
 <script type="text/javascript">
      $(document).ready(function () {
-
-
                 $('#datable').DataTable({
                         "language": {
                         "sEmptyTable":   "Tidak ada data yang tersedia pada tabel ini",
@@ -198,14 +132,4 @@
                         ],
                 });
             });
-
-     //tampil hari ini 
-
-   
-
 </script>
-
-
-
-
-
